@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <title>Asociados</title>
+  <link rel="stylesheet" href="campañas.component.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Foldit&family=Raleway:wght@100;500&display=swap" rel="stylesheet">
+</head>
+
+<header>
+  <app-header-page title="Campañas"></app-header-page>
+</header>
+<body>
+    <app-sidebar></app-sidebar>
+    <section>
+        <h2 class="text1">{{ nombre }}</h2>
+        <input class="buscarO" type="text" id="buscarCam" name="buscarCampaña" placeholder="BUSCAR POR NOMBRE">
+        <button class="imgBuscador" type="button"></button> 
+        <button class="agregarProductos" type="button" (click)="abrirModal()">Agregar productos</button>
+
+    </section>
+    <section>
+        <div class="container">
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Estado</th>
+                        <th colspan="2">Nombre</th>
+                        <th>Impresiones</th>
+                        <th>Clic's</th>
+                        <th>Ventas</th>
+                        <th>Ingresos</th>
+                        <th>Inversión</th>
+                        <th>Inversion/Costos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let producto of productosEncontrados">
+                        <td class="td3">
+                            <button class="estado-btn" [ngClass]="{ 'estado-encendido': estadoP(true), 'estado-apagado': !estadoP(true) } "></button>
+                          </td>
+                        <td class="td2"><img src="{{ producto.fotos }}" alt="{{ producto.nombre }}"></td>
+                        <td class="td3">{{ producto.nombre }}</td>
+                        <td class="td3">{{ datosAleatorios(40, 400) }}</td>
+                        <td class="td3">{{ datosAleatorios(10, 120) }}</td>
+                        <td class="td3">{{ datosAleatorios(12, 30) }}</td>
+                        <td class="td3">${{ datosAleatorios(900, 5000) }}</td>
+                        <td class="td3">${{ datosAleatorios(100, 600) }}</td>
+                        <td class="td3">{{ datosAleatorios(20, 30) }}%</td>                       
+                    </tr>
+                    <tr *ngFor="let producto of seleccionados">
+                        <td class="td3">
+                            <button class="estado-btn" [ngClass]="{ 'estado-encendido': estadoP(true), 'estado-apagado': !estadoP(true) } "></button>
+                          </td>
+                          <td class="td2"><img src="{{ producto.fotos }}" alt="{{ producto.nombre }}"></td>
+                          <td class="td3">{{ producto.nombre }}</td>
+                          <td class="td3"></td>
+                            <td class="td3"></td>
+                        <td class="td3"></td>
+                        <td class="td3"></td>
+                        <td class="td3"></td>
+                        <td class="td3"></td> 
+                      </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <div class="modal" *ngIf="mostrarModal">
+        <div class="modal-content">
+          <table class="tabla2">
+            <thead>
+              <tr>
+                <th><input type="checkbox" id=""></th>
+                <th colspan="2">Producto</th>
+                <th >Precio</th>
+                <th >Stock</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let producto of productosDisponibles">
+                <td class="td3"><input type="checkbox" [checked]="seleccionadosMap.has(producto.id)" (change)="toggleSeleccionado(producto)"></td>
+                <td class="td3"><img src="{{ producto.fotos }}"></td>
+                <td class="td3">{{ producto.nombre }}</td>
+                <td class="td3">${{ producto.precio }}</td>
+                <td class="td3">{{ producto.cantidad}}</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="botones">
+            <button class="botonCancelar" type="button" (click)="cerrarModal()">Cancelar</button> 
+            <button class="botonContinuar" type="button" (click)="agregarProductos()">Confirmar</button>
+          </div>
+          <div class="espacio"></div>
+
+        </div>           
+    </div>      
+</body>

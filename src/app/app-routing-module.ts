@@ -39,6 +39,12 @@ import { PruebaComponent } from './prueba/prueba.component';
 import { VentasComponent } from './ventas/ventas.component';
 import { ProgresoVentaComponent } from './progreso-venta/progreso-venta.component';
 import { CatalogoComponent } from './catalogo/catalogo.component';
+import { LoginComponent } from './login/login.component';
+import { PasswordComponent } from './password/password.component';
+import { ValidpaswordComponent } from './validpasword/validpasword.component';
+import { ProfileComponent } from './profile/profile.component';
+import { RequestpaswordComponent } from './requestpasword/requestpasword.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   {
@@ -176,6 +182,30 @@ const routes: Routes = [
   {
     path:'top',
     component: TopComponent
+  },
+  {
+    path:'login',
+    component: LoginComponent
+  },
+  {
+    path:'password',
+    component: PasswordComponent
+  },
+  {
+    path:'validpasword',
+    component: ValidpaswordComponent
+  },
+  {
+    path: 'requestpasword',
+    component: RequestpaswordComponent
+  },
+  {
+    path:'profile',
+    component: ProfileComponent
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
   }
 ];
 

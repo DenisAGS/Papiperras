@@ -48,6 +48,11 @@ import { CatalogoComponent } from './catalogo/catalogo.component';
 import { PruebaComponent } from './prueba/prueba.component';
 import { ValoracionComponent } from './valoracion/valoracion.component';
 import { VentasComponent } from './ventas/ventas.component';
+import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './profile/profile.component';
+import { RegisterComponent } from './register/register.component';
+import { ValidpaswordComponent } from './validpasword/validpasword.component';
+import { RequestpaswordComponent } from './requestpasword/requestpasword.component';
 
 @NgModule({
   declarations: [
@@ -88,7 +93,13 @@ import { VentasComponent } from './ventas/ventas.component';
     VentasComponent,
     ConsejosComponent,
     DetalleVentaComponent,
-    TopComponent
+    TopComponent,
+    ProfileComponent,
+    RegisterComponent,
+    ValidpaswordComponent,
+    ProfileComponent,
+    RequestpaswordComponent
+
   ],
   imports: [
     BrowserModule,
@@ -102,7 +113,8 @@ import { VentasComponent } from './ventas/ventas.component';
     MatSelectModule,
     ReactiveFormsModule,
     FullCalendarModule,
-    FormsModule
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

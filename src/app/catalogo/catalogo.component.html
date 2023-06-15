@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <title>Asociados</title>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit&family=Raleway:wght@100;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <app-header-page title="Catalogo de productos"></app-header-page>
+    </header>
+    <app-sidebar></app-sidebar>
+
+    <main>
+        <div class="search-wrapper ">
+            <input type="search" class="search-input" placeholder="Buscar" [(ngModel)]="searchText">
+            <div class="input-group-append">
+                <button class="search-button" (click)="filterProducts()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+
+        <div style="margin-top: 2.5em;">
+            <div class="carousel">
+                <div class="product-container">
+                    <div *ngFor="let producto of product.slice(currentIndex, currentIndex + 4); let i = index"
+                        class="product">
+                        <img [src]="producto.imagen" alt="Imagen del Producto {{ producto.id }}"
+                            (click)="goToProduct(producto.id)">
+                        <div style="display: grid;">
+                            <div class="description">{{ producto.descripcion }}</div>
+                            <div class="description">{{ producto.precio }}</div>
+                            <div class="description">{{ producto.oferta }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <button (click)="prev()" [disabled]="currentIndex === 0" class="arrow">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button (click)="next()" [disabled]="currentIndex >= product.length - 4" class="arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <h2>Coincidencias</h2>
+            <div class="image-container">
+                <div *ngFor="let producto of product.slice(0, 6)">
+                    <img class="img-p" [src]="producto.imagen" alt="Imagen">
+                    <p>{{ producto.descripcion }}</p>
+                  </div>
+            </div>
+        
+    </main>
+    <app-footer-page></app-footer-page>
+</body>

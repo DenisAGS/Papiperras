@@ -30,6 +30,15 @@ import { CalendarioComponent } from './calendario/calendario.component';
 import { EstadisticaComponent } from './estadistica/estadistica.component';
 import { VolumenComponent } from './volumen/volumen.component';
 
+import { ConsejosComponent } from './consejos/consejos.component';
+import { DetalleVentaComponent } from './detalle-venta/detalle-venta.component';
+import { TopComponent } from './top/top.component';
+
+import { ValoracionComponent } from './valoracion/valoracion.component';
+import { PruebaComponent } from './prueba/prueba.component';
+import { VentasComponent } from './ventas/ventas.component';
+import { ProgresoVentaComponent } from './progreso-venta/progreso-venta.component';
+import { CatalogoComponent } from './catalogo/catalogo.component';
 
 const routes: Routes = [
   {
@@ -123,8 +132,39 @@ const routes: Routes = [
   {
     path:'detalles',
     component: DetallesComponent
+  },
+  {
+    path:'consejos',
+    component: ConsejosComponent
+  },
+  {
+    path:'detalle-venta',
+    component: DetalleVentaComponent
+  },
+  {
+    path:'top',
+    component: TopComponent
+  },
+  {
+    path:'valoracion',
+    component: ValoracionComponent
+  },
+  {
+    path:'prueba',
+    component: PruebaComponent
+  },
+  {
+    path:'ventas',
+    component: VentasComponent
+  },
+  {
+    path:'progreso',
+    component: ProgresoVentaComponent
+  },
+  {
+    path:'catalogo',
+    component: CatalogoComponent
   }
-
 ];
 
 @NgModule({

@@ -1,0 +1,77 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "nombre": "Producto 1",
+      "imagen": "assets/Images/img-carrusel/aspi.png",
+      "categoria": "Linea blanca",
+      "descripcion": "Aspiradora Koblenz 2 motor",
+      "precio": "Precio normal $1200.69",
+      "oferta": "Oferta $960.00"
+
+    },
+    {
+      "id": 2,
+      "nombre": "Producto 2",
+      "imagen": "assets/Images/img-carrusel/lava.png",
+      "categoria": "Linea blanca",
+      "descripcion": "Lavadora Mabe 20kg color rosa",
+      "precio": "Precio $5000.00",
+      "oferta": " "
+    },
+    {
+      "id": 3,
+      "nombre": "Producto 3",
+      "imagen": "assets/Images/img-carrusel/lavadora.png",
+      "categoria": "Linea blanca",
+      "descripcion": "Lavadora whirlpool 22kg",
+      "precio": "Precio normal $8490.99",
+      "oferta": "Oferta $6960.00"
+    },
+    {
+      "id": 4,
+      "nombre": "Producto 4",
+      "imagen": "assets/Images/img-carrusel/aspi.png",
+      "categoria": "Linea blanca",
+      "descripcion": "precio",
+      "precio": "Precio normal $1200.69",
+      "oferta": "Oferta $960.00"
+    },
+    {
+      "id": 5,
+      "nombre": "Producto 5",
+      "imagen": "assets/Images/img-carrusel/aspi.png",
+      "categoria": "Linea blanca",
+      "descripcion": "Descripción del Producto 3",
+      "precio": "Precio normal $1200.69",
+      "oferta": "Oferta $960.00"
+    },
+    {
+      "id": 6,
+      "nombre": "Producto 6",
+      "imagen": "assets/Images/img-carrusel/aspi.png",
+      "categoria": "Linea blanca",
+      "descripcion": "Descripción del Producto 4",
+      "precio": "Precio normal $1200.69",
+      "oferta": "Oferta $960.00"
+    },
+    {
+      "id": 7,
+      "nombre": "Producto 7",
+      "imagen": "assets/Images/img-carrusel/aspi.png",
+      "categoria": "Linea blanca",
+      "descripcion": "Descripción del Producto 3",
+      "precio": "Precio normal $1200.69",
+      "oferta": "Oferta $960.00"
+    },
+    {
+      "id": 8,
+      "nombre": "Producto 8",
+      "imagen": "assets/Images/img-carrusel/aspi.png",
+      "categoria": "Telefonia",
+      "descripcion": "Descripción del Producto 4",
+      "precio": "Precio normal $1200.69",
+      "oferta": "Oferta $960.00"
+    }
+  ]
+}

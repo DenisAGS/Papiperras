@@ -1,0 +1,212 @@
+.fondoCrema{
+    background-size: cover;
+    position: absolute;
+    width: 1160.88px;
+    height: 350.2px;
+    left: 140.81px;
+    top: 68.49px;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction:row;
+    align-items: flex-start;
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+      
+    background: rgba(255, 201, 148, 0.2);
+    box-shadow: 0px 3.16204px 3.16204px rgba(0, 0, 0, 0.25), 0px 3.16204px 3.16204px rgba(0, 0, 0, 0.25);
+    border-radius: 23.7153px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.circulito1xd{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 70.1px;
+    top: 30px;
+    border-radius: 30px;
+    background: #500250;
+}
+.circulito2xd{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 325.1px;
+    top: 30px;
+    border-radius: 30px;
+    background: #33CFFF;
+}
+.text1{
+    position: absolute;
+    width: 837.15px;
+    height: 145.45px;
+    left: 90px;
+    top: 18.79px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.6204px;
+    line-height: 38px;
+    color: #000000;
+    text-align: left;
+}
+.text2{
+    position: absolute;
+    width: 837.15px;
+    height: 145.45px;
+    left: 345px;
+    top: 18.79px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.6204px;
+    line-height: 38px;
+    color: #000000;
+    text-align: left;
+}
+.boton{
+    left: 1000px;
+    top:20px;
+}
+.fondoGrafica {
+    position: absolute;
+    width: 1003.95px;
+    height: 176.28px;
+    left: 78.1px;
+    top: 61.11px;
+    background: #D9D9D9;
+    z-index: 0;
+  }
+.fondoDatos{
+    position: absolute;
+    width: 1092.48px;
+    height: 80.19px;
+    left: -35px;
+    top: 190px;
+    background: rgba(121, 1, 126, 0.7);
+    box-shadow: 0px 3.16204px 3.16204px rgba(0, 0, 0, 0.25);
+    border-radius: 19.7627px;
+}
+.tabla{   
+    left: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-collapse: unset;
+    border-spacing: 0;
+    color: #FFFFFF;
+}
+.text3{
+    position: absolute;
+    width: 837.15px;
+    height: 145.45px;
+    left: 145px;
+    top: 450.79px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25.6204px;
+    line-height: 38px;
+    color: #000000;
+    text-align: left;
+}
+.tabla2{     
+    left: 30px;
+    width: 100%;
+    margin-top: 470px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 0.833333px solid #000000;
+    border-collapse: unset;
+    border-spacing: 0;
+}
+.td2{
+    padding: 1em;
+    width: 40px;
+    border-top: 0.833333px solid #000000;
+}
+
+.container{
+    width: 100%;
+    max-width: 1165px;
+    margin-left: 130px;
+    text-align: center;
+}
+.estado-btn {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    border-radius: 13px;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .estado-btn:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.3s;
+  }
+  
+  .estado-encendido {
+    background-color: #4caf50;
+  }
+  
+  .estado-encendido:before {
+    transform: translateX(24px);
+  }
+  
+  .estado-apagado {
+    background-color: #ccc;
+  }
+  
+  .estado-apagado:before {
+    transform: translateX(0);
+  }
+  .toggle-button {
+    display: block;
+    margin: 10px auto;
+    margin-right: 80px;
+    background: #9B109B;
+    color: #FFF;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 14px;
+  }
+  
+  .opciones {
+    background: #F8F8F8;
+    border: 1px solid #CCC;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 3px;
+    display: block;
+    position: relative; /* Agrega posición relativa */
+    z-index: 2; /* Ajusta el valor de z-index */
+  }
+  
+  .opciones-container {
+    position: absolute;
+    top: calc(9% + 10px); /* Espacio entre el botón y las opciones */
+    right: 80px; /* Posición a la derecha */
+    width: 120px; /* Ancho del contenedor de las opciones */
+    background: #F8F8F8;
+    border: 1px solid #CCC;
+    padding: 5px;
+    border-radius: 3px;
+    z-index: 1; /* Asegura que el contenedor esté por encima del .fondoGrafica */
+  }

@@ -53,6 +53,12 @@ import { ProfileComponent } from './profile/profile.component';
 import { RegisterComponent } from './register/register.component';
 import { ValidpaswordComponent } from './validpasword/validpasword.component';
 import { RequestpaswordComponent } from './requestpasword/requestpasword.component';
+import { EditarProductosComponent } from './editarP/editar-productos/editar-productos.component';
+import { Publicidad1Component } from './publicidad/publicidad1/publicidad1.component';
+import { ListOfertasComponent } from './ofertas/list-ofertas/list-ofertas.component';
+import { CampañasComponent } from './publicidad/campañas/campañas.component';
+import { MetricasComponent } from './publicidad/metricas/metricas.component';
+import { getUniqueDomId } from '@fullcalendar/core/internal';
 
 @NgModule({
   declarations: [
@@ -98,7 +104,13 @@ import { RequestpaswordComponent } from './requestpasword/requestpasword.compone
     RegisterComponent,
     ValidpaswordComponent,
     ProfileComponent,
-    RequestpaswordComponent
+    RequestpaswordComponent,
+    PublicarPComponent,
+    ListOfertasComponent,
+    CampañasComponent,
+    MetricasComponent,
+    Publicidad1Component,
+    EditarProductosComponent
 
   ],
   imports: [
@@ -113,8 +125,7 @@ import { RequestpaswordComponent } from './requestpasword/requestpasword.compone
     MatSelectModule,
     ReactiveFormsModule,
     FullCalendarModule,
-    FormsModule,
-
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

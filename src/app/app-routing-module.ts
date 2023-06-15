@@ -45,6 +45,11 @@ import { ValidpaswordComponent } from './validpasword/validpasword.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RequestpaswordComponent } from './requestpasword/requestpasword.component';
 import { RegisterComponent } from './register/register.component';
+import { ListOfertasComponent } from './ofertas/list-ofertas/list-ofertas.component';
+import { CampañasComponent } from './publicidad/campañas/campañas.component';
+import { MetricasComponent } from './publicidad/metricas/metricas.component';
+import { Publicidad1Component } from './publicidad/publicidad1/publicidad1.component';
+import { EditarProductosComponent } from './editarP/editar-productos/editar-productos.component';
 
 const routes: Routes = [
   {
@@ -206,6 +211,30 @@ const routes: Routes = [
   {
     path: 'register',
     component: RegisterComponent
+  },{
+    path: 'list-ofertas',
+    component: ListOfertasComponent
+  },{
+    path: 'campañas',
+    component: CampañasComponent
+  },{
+    path: 'metricas',
+    component: MetricasComponent
+  },{
+    path: 'ofertas/:id', 
+    component: PubOfertasComponent
+  },
+  {
+    path: 'metricas/:id',
+    component: MetricasComponent
+  },
+  {
+    path: 'publicidad1',
+    component: Publicidad1Component
+  },
+  {
+    path: 'editar-productos',
+    component: EditarProductosComponent
   }
 ];
 

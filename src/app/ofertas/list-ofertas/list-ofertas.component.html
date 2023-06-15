@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <title>Asociados</title>
+  <link rel="stylesheet" href="list-ofertas.component.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Foldit&family=Raleway:wght@100;500&display=swap" rel="stylesheet">
+</head>
+
+<header>
+  <app-header-page title="Ofertas"></app-header-page>
+</header>
+<body>
+    <app-sidebar></app-sidebar>
+    <section>
+        <input type="text" [(ngModel)]="searchTerm" placeholder="BUSCAR POR NOMBRE" (input)="updateTable()">
+    </section>
+    <section>
+        <div class="container">
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th><input class="checkbox" type="checkbox" id=""></th>
+                        <th colspan="2">Producto</th>
+                        <th>Precio original</th>
+                        <th>Descuento</th>
+                        <th>Precio final</th>
+                        <th>Stock</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <ng-container *ngFor="let oferta of ofertas">
+                        <tr *ngIf="getProductobyId(oferta.id) && getProductobyId(oferta.id)?.precio">
+                            <td class="td2"><input class="checkbox" type="checkbox"></td>         
+                            <td class="td2"><img src="{{ getProductobyId(oferta.id)?.fotos }}" alt="{{ getProductobyId(oferta.id)?.nombre }}"></td>
+                            <td class="td3">{{ getProductobyId(oferta.id)?.nombre }}</td>
+                            <td>${{ getProductobyId(oferta.id)?.precio }}</td>
+                            <td>{{ oferta.descuento }}%</td>
+                            <td>${{ getProductobyId(oferta.id)?.precioDescuento }}</td>
+                            <td>{{ getProductobyId(oferta.id)?.cantidad }}</td>
+                            <td><button (click)="redireccionar(oferta.id)" class="imgEditar" type="button"></button></td>                          
+                        </tr>
+                    </ng-container>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>

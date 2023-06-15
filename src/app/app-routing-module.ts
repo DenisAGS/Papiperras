@@ -164,6 +164,18 @@ const routes: Routes = [
   {
     path:'catalogo',
     component: CatalogoComponent
+  },
+  {
+    path:'consejos',
+    component: ConsejosComponent
+  },
+  {
+    path:'detalle-venta',
+    component: DetalleVentaComponent
+  },
+  {
+    path:'top',
+    component: TopComponent
   }
 ];
 

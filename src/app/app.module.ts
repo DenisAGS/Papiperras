@@ -85,7 +85,10 @@ import { VentasComponent } from './ventas/ventas.component';
     PopupComponent,
     PruebaComponent,
     ValoracionComponent,
-    VentasComponent
+    VentasComponent,
+    ConsejosComponent,
+    DetalleVentaComponent,
+    TopComponent
   ],
   imports: [
     BrowserModule,

@@ -40,6 +40,11 @@ import { VolumenComponent } from './volumen/volumen.component';
 import { ConsejosComponent } from './consejos/consejos.component';
 import { FooterPageComponent } from './footer-page/footer-page.component';
 import { CalendarioComponent } from './calendario/calendario.component';
+import { TopComponent } from './top/top.component';
+import { ProgresoVentaComponent } from './progreso-venta/progreso-venta.component';
+import { PopupComponent } from './popup/popup.component';
+import { DetalleVentaComponent } from './detalle-venta/detalle-venta.component';
+import { CatalogoComponent } from './catalogo/catalogo.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +74,12 @@ import { CalendarioComponent } from './calendario/calendario.component';
     ConsejosComponent,
     CalendarioComponent,
     VolumenComponent,
-    SaldosComponent
+    SaldosComponent,
+    TopComponent,
+    CatalogoComponent,
+    ProgresoVentaComponent,
+    DetalleVentaComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,

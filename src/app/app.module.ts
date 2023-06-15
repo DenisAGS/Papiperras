@@ -45,6 +45,9 @@ import { ProgresoVentaComponent } from './progreso-venta/progreso-venta.componen
 import { PopupComponent } from './popup/popup.component';
 import { DetalleVentaComponent } from './detalle-venta/detalle-venta.component';
 import { CatalogoComponent } from './catalogo/catalogo.component';
+import { PruebaComponent } from './prueba/prueba.component';
+import { ValoracionComponent } from './valoracion/valoracion.component';
+import { VentasComponent } from './ventas/ventas.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +82,10 @@ import { CatalogoComponent } from './catalogo/catalogo.component';
     CatalogoComponent,
     ProgresoVentaComponent,
     DetalleVentaComponent,
-    PopupComponent
+    PopupComponent,
+    PruebaComponent,
+    ValoracionComponent,
+    VentasComponent
   ],
   imports: [
     BrowserModule,

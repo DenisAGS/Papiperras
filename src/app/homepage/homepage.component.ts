@@ -26,13 +26,13 @@ export class HomepageComponent implements OnInit {
     });
   }
   redirectToOpinion(): void {
-    this.router.navigate(['/calendario']); // Reemplaza '/preguntas' por la ruta correspondiente al componente de preguntas
+    this.router.navigate(['/valoracion']); // Reemplaza '/preguntas' por la ruta correspondiente al componente de preguntas
   }
   redirectToPreguntas(): void {
     this.router.navigate(['/preguntas-clientes']); // Reemplaza '/preguntas' por la ruta correspondiente al componente de preguntas
   }
   redirectToVentas(): void {
-    this.router.navigate(['/calendario']); // Reemplaza '/preguntas' por la ruta correspondiente al componente de preguntas
+    this.router.navigate(['/ventas']); // Reemplaza '/preguntas' por la ruta correspondiente al componente de preguntas
   }
   ngOnInit(): void {
     // Simular datos recibidos
